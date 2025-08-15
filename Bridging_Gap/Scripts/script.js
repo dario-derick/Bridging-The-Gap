@@ -254,8 +254,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 300);
 
-  // For actual implementation, you would:
-  // 1. Wait for all critical assets to load (images, fonts, etc.)
-  // 2. Update progress bar based on actual loading progress
-  // 3. Remove loader when everything is ready
+document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
 });
+
