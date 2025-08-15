@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #2c3e50; /* Deep, trustworthy navy */
+  --secondary-color: #f8f9fa; /* Soft, warm off-white */
+  --accent-color: #1abc9c;   /* Hopeful teal */
+  --accent-hover: #16a085;
+  --text-color: #34495e;
+  --light-gray: #ecf0f1;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 0;
+  margin: 0;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  font-size: 2.25rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.book-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-content {
+  padding: 1.5rem;
+}
+
+.book-content h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.book-content p {
+  color: var(--text-color);
+  margin-bottom: 1.25rem;
+}
+
+.book-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
