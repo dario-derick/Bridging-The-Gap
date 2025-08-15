@@ -47,7 +47,7 @@
             height: auto;
         }
 
-        .container {
+        .container-hero-content{
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
@@ -729,4 +729,5 @@
             .btn {
                 padding: 10px 20px;
             }
+
         }
