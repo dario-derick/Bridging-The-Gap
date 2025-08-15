@@ -259,7 +259,7 @@
     }
     
     .cta-buttons {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: center;
     }
    .section {
@@ -291,4 +291,5 @@
                 min-width: 200px;
                 margin: 0 10px;
             }
+
 }
